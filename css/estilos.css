@@ -1,0 +1,67 @@
+@import url(menu.css);
+@import url(banner.css);
+@import url(historia.css);
+@import url(atractivos.css);
+@import url(contactos.css);
+@import url(info.css);
+
+/*margenes generales*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/*coloca el estilo de letra a todo el body*/
+	font-family: "Dubai";
+
+}
+
+
+
+header {
+	/*ancho del 100%*/
+	width: 100%;
+	height: 50px; /*alto de 50px*/
+	background: #333; /*color de fondo del header*/
+	color: #fff; /*color de letra del header*/
+
+	position: fixed; /*para que no se mueva el menú*/
+	top: 0; /*para que aranque desde estas posiciones*/
+	left: 0;
+	z-index: 100; /*para que esté siempre delante de los demás elementos*/
+}
+
+/*llamada a una clase*/
+.contenedor{
+	width: 98%; /*ancho del contenedor*/
+	margin: auto; 
+}
+
+.contenedor h1{
+	float: left;
+}
+
+header.contenedor {
+	display: table;
+}
+
+section {
+	width: 100%;
+	margin-bottom: 25px;
+	margin-top: 50px;
+}
+
+
+
+
+/*********************************************************************/
+/*Responsive*/
+
+@media (min-width: 1024px) {
+	.contenedor{
+		width: 1000px;
+	}
+	
+}

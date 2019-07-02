@@ -1,0 +1,63 @@
+#banner{
+	margin-top: 50px; /*para que inicie debajo del header*/
+	position: relative;
+}
+
+#banner img{
+	width: 100%; /*el 100% de la pantalla actual*/
+	height: 570px;
+}
+
+#banner .contenedor{
+	position: absolute; /*este contenedor se va a posicionar en base a banner*/
+	top: 50%; /*50% del header*/
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+}
+
+#banner h2 {
+	font-size: 28px;
+}
+
+#banner a{
+	display: block;
+	width: 100px;
+	color: #fff;
+	text-decoration: none;
+	padding: 7px;
+	margin-top: 10px;
+	border: 3px solid #fff;
+}
+
+#banner a:hover{
+	background: rgba(51,51,51,0.5);
+}
+
+
+
+@media (min-width: 480px) {
+	#banner h2 {
+	font-size: 40px;
+	}
+
+	#banner a {
+	margin-top: 25px;
+	}	
+}
+
+
+@media (min-width: 1024px) {
+	#banner h2 {
+	font-size: 70px;
+	}
+
+	#banner p {
+	font-size: 20px;
+	}
+
+
+	#banner a {
+	margin-top: 25px;
+	}	
+}
